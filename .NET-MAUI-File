@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IMCcalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+         <Entry x:Name="weightEntry" Placeholder="Digite o peso(kg)" Keyboard="Numeric" />
+         <Entry x:Name="heightEntry" Placeholder="Digite a altura(m)" Keyboard="Numeric" />
+
+         <Button Text="Calcular IMC" Clicked="OnCounterClicked" />
+
+         <Label x:Name="labelResult" FontSize="18" TextColor="LawnGreen" HorizontalOptions="Center" />
+      </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
